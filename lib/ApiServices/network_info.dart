@@ -19,8 +19,8 @@ abstract class NetworkInfo {
       if (connectivityResult == ConnectivityResult.none) {
         UIUtils.hideProgressDialog();
         Get.snackbar(
-            "ERRORMESSAGE".tr,
-            "NOINTERNETCONNECTION".tr,
+            "ERROR".tr,
+            "NO INTERNET CONNECTION".tr,
             backgroundColor: Colors.red,
             snackPosition: SnackPosition.BOTTOM);
         checkNetwork();
